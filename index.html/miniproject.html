@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<body >
+    <style>
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url({% static "pic3.jpg"%}) no-repeat;
+	background-size: cover;
+}
+.login-box{
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
+.login-box h2{
+	float: left;
+	font-size: 45px;
+	border-bottom: 4px solid #4caf50;
+	margin-bottom: 40px;
+	padding: 8px 0;
+}
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid #4caf50;
+}
+.textbox i {
+	width: 26px;
+	float: left;
+	text-align: center;
+}
+.textbox input{
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+	font-size: 18px;
+    width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+button {
+        background-color: #4caf50;
+        color: white;
+        padding: 8px 20px;
+        margin: 6px 0;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+    }
+button:hover {
+        opacity: 0.8;
+    }
+.register{
+	width: 280px;
+	position: absolute;
+	top: 80%;
+	left: 55%;
+	transform: translate(-78%,-58%);
+	color: white;
+}
+</style>
+<div class="login-box">
+    <form action="home" method="get">
+        <p>
+            <font color="#990000">
+                <h2>Login</h2><br><br><br>
+            </font></p>
+        <div class="wrapper" id=Logl>
+            <div class="textbox">
+
+                <input type="text"  name="username" placeholder="Username">
+            </div>
+        </div>
+        <div class="wrapper" id=Log2>
+            <div class="textbox">
+
+                <input type="password"  name="password" placeholder="Password">
+            </div>
+        </div>
+
+            <input type="submit" name="" value="login">
+    </form>
+</div>
+<br>
+<br>
+<br>
+<P><a href="si">
+    <div class="register">
+    <form action="si" method="get">
+        <lable>
+            <p><font color="#df9f9f">
+                <h3>New user, register?</h3>
+                </font></p>
+        </lable>
+    </form>
+    </div>
+</a></P>
+</body>
+</html>

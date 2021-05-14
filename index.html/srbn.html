@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+<body>
+	<center>
+		<br><br><br>
+			<div>
+				<font size="5" color="black">
+		<h2>DONARS DETAILS OF B-</h2><br>
+		  <table>
+			 <thead>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Address</th>
+				<th>Age</th>
+				<th>phno</th>
+				<th>city</th>
+				<th>bloodgroup</th>
+			 </thead>
+				<tr>
+				   {% for st in str %}
+				   <td>{{st.0}}</td>
+				   <td>{{st.1}}</td>
+				   <td>{{st.2}}</td>
+				   <td>{{st.3}}</td>
+					<td>{{st.4}}</td>
+					<td>{{st.5}}</td>
+					<td>{{st.6}}</td>
+					{% endfor %}
+				</tr>
+		  </table>
+		  <a href="home"><h3>Go back to home page</h3></a>
+				</font>
+			</div>
+		  </center>
+    <style>
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url({% static "pic5.jpg" %}) no-repeat;
+	background-size: cover;
+}ss
+			div {
+				padding: 5pt;
+				color: black;
+			}
+			table, tr, td, th{
+				border: solid 2pt orange;
+			}
+
+		</style>
+   </body>
+</html>

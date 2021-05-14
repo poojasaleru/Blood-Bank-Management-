@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+<body>
+	<center>
+		<br><br><br>
+			<div>
+				<font size="5" color="black">
+		<h2>DONARS DETAILS OF B+</h2><br>
+		  <table>
+			 <thead>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Age</th>
+				<th>Ph no</th>
+			 </thead>
+			 
+			 {% for row in rows %}
+				<tr>
+				   <td>{{row[0]}}</td>
+				   <td>{{row[1]}}</td>
+				   <td>{{row[2]}}</td>
+				   <td>{{row[3]}}</td>
+				</tr>
+			 {% endfor %}
+		  </table>
+		  <a href="home.html"><h3>Go back to home page</h3></a>
+				</font>
+			</div>
+		  </center>
+    <style>
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url("pic5.jpg") no-repeat;
+	background-size: cover;
+}ss
+			div {
+				padding: 5pt;
+				color: black;
+			}
+			table, tr, td, th{
+				border: solid 2pt orange;
+			}
+
+		</style>
+   </body>
+</html>
